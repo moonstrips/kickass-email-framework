@@ -1,0 +1,84 @@
+/* ridiculously simple reset */
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 1em;
+	font-size: 100%;
+}
+
+/* basic element setup */
+html {
+	background: #eee;
+}
+body {
+	max-width: 640px;
+	margin: 0 auto;
+	background: #fff;
+}
+h1,
+h2,
+h3 {
+	padding: 0 0 .5em 0;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.25em;
+}
+
+/* simple columns */
+.col3,
+.col6,
+.col9,
+.col12 {
+	float: left;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.col3 {
+	width: 25%;
+}
+.col6 {
+	width: 50%;
+}
+.col9 {
+	width: 75%;
+}
+.col12 {
+	float: none;
+	width: 100%;
+	clear: both;
+}
+.col12:after,
+.col12:before,
+.last:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.col3 *,
+.col6 *,
+.col9 *,
+.col12 * {
+	width: 100%;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 480px) {
+	body {
+		width: 320px;
+	}
+	.col3,
+	.col6,
+	.col9,
+	.col12 {
+		width: 300px;
+		padding: 0;
+		margin: 10px;
+	}
+}
