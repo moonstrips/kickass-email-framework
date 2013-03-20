@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'BLOKKNeue-Regular';
+	src: url('webfonts/BLOKKNeue-Regular.eot');
+}
+
+@font-face {
+	font-family: 'BLOKKNeue-Regular';
+	src: url('webfonts/BLOKKNeue-Regular.woff') format('woff'),
+	url('webfonts/BLOKKNeue-Regular.svg#BLOKKNeue-Regular') format('svg');
+}
+
+* {
+	font-family: "BLOKKNeue-Regular", serif !important;
+}
